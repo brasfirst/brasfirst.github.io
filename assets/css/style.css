@@ -1,0 +1,1073 @@
+/*========================================= Configurações =========================================*/
+ @font-face {
+     font-family: Bicyclette Regular;
+     src: url('../fonts/Bicyclette-Regular.otf');
+}
+ @font-face {
+     font-family: Bicyclette Light;
+     src: url('../fonts/Bicyclette-Light.otf');
+}
+ @font-face {
+     font-family: Bicyclette Thin;
+     src: url('../fonts/Bicyclette-Thin.otf');
+}
+ @font-face {
+     font-family: Bicyclette Bold;
+     src: url('../fonts/Bicyclette-Bold.otf');
+}
+ * {
+     font-family: Bicyclette Regular;
+     padding: 0;
+     margin: 0;
+     border: 0;
+     color: #232323;
+}
+ .wrapper {
+     width: 90%;
+     position: relative;
+     margin: auto;
+}
+ .title {
+     text-align: center;
+     text-transform: uppercase;
+}
+ .title h3 {
+     font-size: 30px;
+     font-family: Bicyclette Thin;
+}
+ .title h2 {
+     font-size: 14px;
+     padding: 15px;
+}
+ .title span {
+     width: 250px;
+     height: 1px;
+     position: relative;
+     display: flex;
+     margin: 15px auto;
+}
+ main {
+     margin-top: 80px;
+}
+ section {
+     position: relative;
+     padding: 40px 0;
+}
+ footer {
+     display: none;
+}
+/*========================================= Cabeçalho =========================================*/
+ header {
+     width: 100%;
+     top: 0;
+     position: fixed;
+     height: 80px;
+     z-index: 999;
+     background: #ffffff;
+     box-shadow: 0 0 5px rgba(89,89,89,.55);
+}
+/* Topbar --------------------------- */
+ .topbar {
+    display: none;
+}
+/* Logo --------------------------- */
+ header .logo {
+     width: auto;
+     height: auto;
+     padding: 22px;
+     position: relative;
+     float: left;
+     text-transform: uppercase;
+}
+ header .logo h1 {
+}
+ header .logo h1 a {
+     text-decoration: none;
+     font-size: 25px;
+}
+ header .logo h1 a .color1 {
+     color: #4b2a4b;
+}
+ header .logo h1 a .color2 {
+     color: #dca412;
+}
+/* Menu --------------------------- */
+ header .menu {
+     position: relative;
+     float: right;
+     top: 0;
+     display: inline-flex;
+}
+ header .menu li {
+     display: inline-flex;
+}
+ header .menu li a {
+text-decoration: none;
+    text-transform: uppercase;
+    padding: 32px 13px;
+    position: relative;
+    font-size: 15px;
+    color: #717171;
+}
+ header .menu li a:hover {
+     color: #4b2a4b;
+}
+/*========================================= Slider =========================================*/
+ .carousel {
+     height: 600px;
+     width: 100%;
+     position: relative;
+}
+ .slides {
+     height: 100%;
+     width: 100%;
+     position: relative;
+}
+ .slides button a {
+     text-decoration: none;
+    color: #ffffff;
+}
+ .slide {
+     top: 0;
+     left: 0;
+     height: 100%;
+     width: 100%;
+     opacity: 0;
+     transition: opacity 1000ms;
+}
+ .slide:nth-child(1) {
+     background-color: red;
+     opacity: 1;
+}
+ .slide:nth-child(2) {
+     background-color: green;
+}
+ .slide:nth-child(3) {
+     background-color: blue;
+}
+ .slide[data-state=active] {
+     display: inline-block;
+}
+ .indicators {
+     position: relative;
+     bottom: 30px;
+     margin: auto;
+     text-align: center;
+}
+ .indicator {
+     cursor: pointer;
+}
+/*-------------------- Slider 01 --------------------*/
+ #slider1 {
+     background: #dca533;
+     width: 100%;
+     text-align: left;
+     height: 600px;
+     position: absolute;
+     left: 0;
+     right: 0;
+}
+ #slider1 img {
+     width: 100%;
+     position: absolute;
+     height: 600px;
+     object-fit: cover;
+}
+ #slider1 .dark {
+     background: #4b2a4b0d;;
+     position: absolute;
+     width: 100%;
+     height: 100%;
+}
+ #slider1 .text {
+     top: 250px;
+     position: relative;
+     z-index: 99;
+}
+ #slider1 h3 {
+     font-size: 38px;
+     text-transform: uppercase;
+     width: 400px;
+     color: #ffffff;
+}
+ #slider1 h4 {
+     font-size: 24px;
+     color: #ffffff;
+     padding: 10px 0;
+}
+ #slider1 span {
+     width: 150px;
+     height: 2px;
+     background: #ffffff;
+     position: relative;
+     display: inline-block;
+}
+ #slider1 button {
+     color: #808080;
+     border: 1px solid #ffffff;
+     padding: 10px 45px;
+     text-transform: uppercase;
+     margin: 15px 0;
+     background: #ffffff00;
+     cursor: pointer;
+     border-radius: 3px;
+}
+/*-------------------- Slider 02 --------------------*/
+ #slider2 {
+     background: #dca533;
+     width: 100%;
+     text-align: left;
+     height: 600px;
+     position: absolute;
+     left: 0;
+     right: 0;
+}
+ #slider2 img {
+     width: 100%;
+     position: absolute;
+     height: 600px;
+     object-fit: cover;
+}
+ #slider2 .dark {
+    background: #3333338c;
+     position: absolute;
+     width: 100%;
+     height: 100%;
+}
+ #slider2 .text {
+     top: 280px;
+     position: relative;
+     text-align: center;
+     z-index: 99;
+}
+ #slider2 h3 {
+     font-size: 38px;
+     text-transform: uppercase;
+     color: #ffffff;
+}
+ #slider2 p {
+     font-size: 24px;
+     color: #ffffff;
+     padding: 10px 0;
+     max-width: 600px;
+     margin: auto;
+}
+ #slider2 span {
+     width: 150px;
+     height: 2px;
+     background: #ffffff;
+     position: relative;
+     display: inline-block;
+}
+ #slider2 button {
+     color: #808080;
+     border: 1px solid #ffffff;
+     padding: 10px 45px;
+     text-transform: uppercase;
+     margin: 15px 0;
+     background: #ffffff00;
+     cursor: pointer;
+     border-radius: 3px;
+}
+/*-------------------- Slider 03 --------------------*/
+ #slider3 {
+     background: #dca533;
+     width: 100%;
+     position: absolute;
+     height: 600px;
+     top: 0;
+}
+ #slider3 img {
+     width: 100%;
+     position: absolute;
+     height: 600px;
+     object-fit: cover;
+}
+ #slider3 .dark {
+    background: #33333399;
+     position: absolute;
+     width: 100%;
+     height: 100%;
+}
+ #slider3 .text {
+     top: 250px;
+     position: relative;
+     float: right;
+     right: 10%;
+     z-index: 99;
+}
+ #slider3 h3 {
+     font-size: 30px;
+     text-transform: uppercase;
+     color: #ffffff;
+}
+ #slider3 p {
+     font-size: 17px;
+     color: #ffffff;
+     padding: 10px 0;
+     max-width: 400px;
+}
+ #slider3 span {
+     width: 150px;
+     height: 2px;
+     background: #ffffff;
+     position: relative;
+     display: inline-block;
+}
+ #slider3 button {
+     color: #808080;
+     border: 1px solid #ffffff;
+     padding: 10px 45px;
+     text-transform: uppercase;
+     margin: 15px 0;
+     background: #ffffff00;
+     cursor: pointer;
+     border-radius: 3px;
+}
+/*========================================= O que fazemos =========================================*/
+ #o-que-fazemos {
+     background: #191a1e;
+}
+ #o-que-fazemos .title {
+     color: #ffffff;
+}
+ #o-que-fazemos .title h3 {
+     color: #ffffff;
+}
+ #o-que-fazemos .title h2 {
+     color: #ffffff;
+}
+ #o-que-fazemos .title span {
+     background: #ffffff;
+}
+ #o-que-fazemos ul {
+     text-align: center;
+}
+ #o-que-fazemos ul li {
+     width: 170px;
+     height: auto;
+     display: inline-block;
+     text-align: center;
+     margin: auto;
+     padding: 15px 0px;
+}
+ #o-que-fazemos .box div {
+     width: 130px;
+     height: 130px;
+     border-radius: 50%;
+     position: relative;
+     margin: auto;
+}
+ #o-que-fazemos .box div span {
+     color: #ffffff;
+     top: 45px;
+     font-size: 40px;
+     position: relative;
+}
+ #o-que-fazemos ul li h4{
+     padding-top: 30px;
+     font-size: 17px;
+     color: #ffffff;
+     text-transform: uppercase;
+     font-weight: normal;
+}
+ #icon1 {
+     background: #572f56;
+}
+ #icon2 {
+     background: #ca4529;
+}
+ #icon3 {
+     background: #5a975c;
+}
+ #icon4 {
+     background: #efbb10;
+}
+ #icon5 {
+     background: #155cea;
+}
+
+/*========================================= Nossos Planos =========================================*/
+
+ #nossos-planos .title {
+     color: #232323;
+     margin-bottom: 30px;
+     position: relative;
+}
+ #nossos-planos .title span {
+     background: #232323;
+}
+
+
+#nossos-planos {
+background: #fbfbfb;
+box-shadow: -5px 2px 32px 0 rgba(61,69,74,.12);
+}
+
+.planos-prontos {
+
+text-align: center;
+    padding: 30px;
+}
+
+.planos-prontos p {
+
+  padding: 45px 0 0 0;
+}
+
+.planos {
+
+    width: 250px;
+    height: auto;
+    background: #ffffff;
+    display: inline-table;
+    top: 40px;
+    position: relative;
+    margin: 0 30px;
+    box-shadow: 0 0 5px rgba(89, 89, 89, 0.17);
+    border-radius: 3px;
+}
+
+.planos ul li:nth-child(odd):not(:first-child), .plano-popular ul li:nth-child(odd):not(:first-child) {
+    background: #e8e8e8;
+}
+
+.planos ul li {
+
+  display: inline-table;
+        padding: 20px 2%;
+    width: 96%;
+    color: #666666;
+    font-size: 14px;
+}
+
+
+.plano-popular ul li #most {
+
+    font-family: Bicyclette Bold;
+    text-transform: uppercase;
+    color: #4b2a4b;
+    font-size: 14px;
+    text-align: center;
+    display: inline-block;
+}
+.planos ul li button, .plano-popular ul li button {
+
+  padding: 10px 30px;
+    border-radius: 3px;
+    background: #717171;
+    color: #e8e8e8;
+    text-transform: uppercase;
+    font-family: Bicyclette Bold;
+    font-size: 14px;
+    cursor: pointer;
+            -webkit-transition: background-color .15s ease-out;
+    transition: background-color .15s ease-out;
+}
+
+.planos ul li button:hover,
+.plano-popular ul li button:hover {
+
+    background: #4b2a4b;
+
+}
+
+.plano-popular {
+
+    width: 350px;
+    height: auto;
+    background: #ffffff;
+    display: inline-table;
+    box-shadow: 0 0 5px rgba(89, 89, 89, 0.17);
+    border-radius: 3px;
+}
+
+.planos .sub-title {
+
+  font-size: 25px;
+    color: #4b2a4b;
+    padding: 10px 2%;
+}
+
+.plano-popular .sub-title {
+  font-size: 25px;
+    color: #4b2a4b;
+    padding: 21px 2%;
+}
+
+.planos #sub {
+
+border-top: 1px solid #e6e7e8;
+    color: #191a1e;
+    padding: 9px 2%;
+    text-align: center;
+    border-bottom: 1px solid #e6e7e8;
+}
+
+
+.planos #sub #price {
+
+    font-size: 18px;
+    color: #191a1e;
+    font-weight: 700;
+    vertical-align: bottom;
+    display: inline-block;
+    line-height: 1.5;
+    margin-right: 6px;
+    font-family: Bicyclette Light;
+} 
+
+.planos #sub #price-real {
+
+    font-size: 36px;
+    color: #191a1e;
+    font-weight: 700;
+    line-height: 1;
+    font-family: Bicyclette Bold;
+}
+
+
+.plano-popular #sub {
+
+      background: #4b2a4b;
+    color: #e8e8e8;
+    padding: 40px 2%;
+    text-align: center;
+}
+
+
+.plano-popular #sub #price {
+
+  font-size: 18px;
+    color: #ffffff;
+    font-weight: 700;
+    vertical-align: bottom;
+    display: inline-block;
+    line-height: 1.5;
+    margin-right: 6px;
+    font-family: Bicyclette Light;
+} 
+
+.plano-popular #sub #price-real {
+
+  font-size: 45px;
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 1;
+    font-family: Bicyclette Bold;
+}
+.plano-popular ul {}
+
+.plano-popular ul li {
+
+    display: inline-table;
+        padding: 20px 2%;
+    width: 96%;
+    color: #666666;
+    font-size: 14px;
+}
+
+.planos-popular ul li button {}
+/*========================================= Nossos trabalhos =========================================*/
+ #portifolio .title {
+     color: #232323;
+     margin-bottom: 30px;
+     position: relative;
+}
+ #portifolio .title span {
+     background: #232323;
+}
+ #portifolio {
+     text-align: center;
+}
+ #portifolio .box {
+     width: 270px;
+     height: 170px;
+     background: #222222;
+     display: inline-block;
+     margin: 20px;
+}
+/*========================================= Quem somos =========================================*/
+ #quem-somos {
+     background: #572f56;
+     text-align: center;
+     padding-bottom: 0;
+}
+ #quem-somos .title {
+     color: #ffffff;
+     padding-bottom: 40px;
+}
+ #quem-somos .title h3 {
+     color: #ffffff;
+}
+ #quem-somos .title h2 {
+     color: #ffffff;
+}
+ #quem-somos .title span {
+     background: #ffffff;
+}
+ #about-us {
+     width: 38%;
+     text-align: right;
+     display: inline-block;
+}
+ #about-us h4 {
+     color: #ffffff;
+     font-size: 24px;
+}
+ #about-us p {
+     color: #e2e2e2;
+     padding: 10px 0;
+     font-size: 14px;
+     font-family: Bicyclette Thin;
+}
+ #screen {
+width: auto;
+    height: 385px;
+    display: inline-block;
+    border-radius: 15px 15px 0 0;
+    margin: 0 25px;
+    position: relative;
+    float: right;
+}
+
+#screen img {
+
+    height: 100%;
+}
+
+ #topics {
+     background: #4b2a4b;
+     padding: 55px;
+     bottom: 0;
+     text-align: center;
+     margin-top: 60px;
+}
+
+ #topics .box h4 {
+     color: #ffffff;
+     text-transform: uppercase;
+     font-size: 14px;
+     font-family: Bicyclette Thin;
+}
+ #topics .box{
+     text-align: center;
+     display: inline-block;
+     width: 300px;
+     padding: 15px;
+}
+ #topics .box h4 span {
+     font-size: 32px;
+     top: 4px;
+     position: relative;
+     color: white;
+     font-family: Bicyclette Thin;
+}
+ #topics .box p {
+     color: white;
+     padding: 15px 0;
+     font-family: Bicyclette Thin;
+     font-size: 14px;
+}
+/*========================================= Nossa Equipe =========================================*/
+ #equipe {
+     background: #191a1e;
+}
+ #equipe .title h3 {
+     color: #ffffff;
+     font-size: 24px;
+     text-align: left;
+}
+ .personal-time {
+    display: inline-block;
+    margin: 40px 45px 0px 45px;
+    background: #c1c1c1;
+    padding: 0;
+    border-radius: 3px;
+    width: 200px;
+    text-align: center;
+}
+
+.personal-time .photo img {
+
+    width: 100%;
+    height: 210px;
+    bottom: 0;
+    position: relative;
+    border-radius: 3px 3px 0 0;
+}
+ .personal {
+    font-size: 21px;
+    text-transform: uppercase;
+    color: #191a1f;
+}
+ .personal h4 {
+    font-size: 21px;
+    text-transform: uppercase;
+    color: #191a1f;
+        padding: 10px 0 0 0;
+}
+ .personal h5 {
+margin: 10px 0;
+    font-size: 14px;
+    color: #191a1f;
+    text-transform: capitalize;
+}
+ .social-personal {
+
+        position: relative;
+    bottom: 0;
+    padding: 10px;
+    background: #3c3c3c;
+}
+ .social-personal ul {
+
+    height: 20px;
+}
+ .social-personal ul li {
+     display: inline-block;
+}
+ .social-personal ul li a {
+}
+ .social-personal ul li a span {
+color: #cacaca;
+    font-size: 24px;
+    padding: 0 10px;
+}
+
+/*========================================= Clientes =========================================*/
+ #clientes {
+     min-height: auto;
+     text-align: center;
+}
+ #clientes .title h3 {
+     font-size: 24px;
+     text-align: center;
+}
+ #clientes ul {
+     margin: 30px 15px 0 0;
+}
+ #clientes ul li {
+    display: inline-block;
+    width: 100px;
+    height: 100%;
+    margin: 15px 30px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    color: #572f56;
+}
+ #clientes ul li img {
+     width: 100%;
+     height: 100%;
+    ;
+}
+/*========================================= Propostas =========================================*/
+ #proposta {
+     background: #572f56;
+     min-height: auto;
+}
+ #proposta h3 {
+     font-size: 24px;
+     text-align: left;
+     color: #e5e5e5;
+     font-family: Bicyclette Bold;
+}
+ #proposta p {
+     padding: 15px 0;
+     font-family: Bicyclette Thin;
+     width: 70%;
+     color: #e5e5e5;
+}
+ #link-proposta {
+     text-align: center;
+}
+ #proposta #link-proposta button {
+     padding: 5px 30px;
+     font-family: Bicyclette Bold;
+     color: #572f56;
+     font-size: 20px;
+     text-transform: uppercase;
+     display: inline-block;
+     margin: 25px;
+     text-align: center;
+     cursor: pointer;
+     border-radius: 3px;
+}
+/*========================================= Contato =========================================*/
+ #contato {
+     text-align: center;
+}
+ #contato .title {
+     color: #191a1e;
+     padding-bottom: 40px;
+}
+ #contato .title h3 {
+     color: #191a1e;
+}
+ #contato .title h2 {
+     color: #191a1e;
+}
+ #contato .title span {
+     background: #191a1e;
+}
+ #contato form {
+     width: 100%;
+     left: 0%;
+     right: 0%;
+     text-align: center;
+     margin: auto;
+}
+ #contato #mensagem {
+     min-width: 86%;
+     min-height: 100px;
+     border: 1px solid #d5d5d5;
+     margin: auto;
+     display: inherit;
+     padding: 1%;
+     max-width: 86%;
+     max-height: 200px;
+}
+ #contato input{
+     width: 40%;
+     height: 40px;
+     margin: 15px;
+     padding: 0 1%;
+     border: 1px solid rgb(213, 213, 213);
+     background: #fff;
+     color: rgb(123, 123, 123);
+}
+ #submit input {
+     cursor: pointer;
+     width: 250px;
+     border-radius: 3px;
+}
+ #submit input:hover {
+     background: #572f56;
+     color: #dddddd;
+}
+/*========================================= Footer =========================================*/
+ footer {
+     width: 100%;
+     height: auto;
+     position: relative;
+     display: inline-block;
+}
+ .widget {
+     text-align: center;
+     display: inline-flex;
+     width: 100%;
+     background: #572f56;
+     height: auto;
+     padding: 15px 0;
+}
+ .widget ul li {
+     display: inline-block;
+     text-transform: uppercase;
+     color: #dddddd;
+     font-family: Bicyclette Bold;
+     padding: 0 15px;
+     font-size: 15px;
+}
+ .widget ul li a {
+     color: #dddddd;
+     font-family: Bicyclette Bold;
+     text-decoration: none;
+}
+ .widget ul li span {
+     color: #dddddd;
+     font-family: Bicyclette Bold;
+     padding: 0px 21px 0 0;
+     position: relative;
+}
+ #copy {
+     padding: 30px;
+     background: #4b2a4b;
+     height: 20px;
+}
+ #copy p {
+     color: #dddddd;
+     font-family: Bicyclette Bold;
+}
+ .social {
+}
+ .social ul {
+     text-align: right;
+}
+ .social ul li {
+     display: inline-block;
+     font-size: 21px;
+     padding: 0px 12px;
+     top: -17px;
+     right: 0;
+     position: relative;
+}
+ .social ul li a {
+}
+ .social ul li a span {
+     color: #dddddd;
+}
+ @media only screen and (max-width: 320px) {
+
+      #portifolio .box {
+    width: 270px;
+    height: 170px;
+  }
+}
+ @media only screen and (max-width: 480px) {
+
+
+#slider1 h3 {
+width: 90%;
+}
+
+
+
+#slider2 .text {
+
+    top: 150px;
+}
+
+
+
+#slider3 .text {
+right: 0;
+}
+}
+ @media only screen and (max-width: 768px) {
+
+  #contato input {
+    width: 90%;
+  }
+
+  #submit input {
+    cursor: pointer;
+    width: 250px;
+    border-radius: 3px;
+}
+
+.planos, .plano-popular {
+
+width: 100%!important;
+}
+
+
+#topics .box {
+    width: 90%important;
+}
+
+
+ }
+
+   @media only screen and (max-width: 1024px) {
+
+  .wrapper {
+
+    width: 90%;
+  }
+
+
+/* Header */
+
+header .logo {
+
+      float: none;
+    text-align: center;
+}
+header .menu {
+
+  display: none;
+}
+
+#screen img {
+
+
+
+    height: 100%;
+    width: 90%;
+    padding: 55px 0;
+}
+
+.widget ul li {
+
+    padding: 15px 15px;
+
+}
+
+#copy {
+    padding: 30px;
+    background: #4b2a4b;
+    height: auto;
+}
+
+
+#copy p {
+
+    text-align: center;
+}
+
+.social ul {
+
+        text-align: center;
+    position: relative;
+    margin: 35px;
+}
+
+
+#slider2 .text {
+    top: 180px;
+
+}
+
+  /* Planos */
+
+    .planos, .plano-popular {
+
+    top: 0;
+    margin: 15px 0;
+    width: 60%;
+  }
+
+  /* Portifolio */
+
+    #portifolio .box {
+    width: 270px;
+    height: 170px;
+
+}
+
+/* Sobre */
+
+#about-us {
+    text-align: justify;
+    display: inline;
+}
+
+#screen {
+
+      display: inline;
+    float: none;
+}
+
+
+
+/*Serviços */
+
+#o-que-fazemos ul li {
+   padding: 50px;
+
+  }
+
+/* proposta */
+#proposta h3 {
+    text-align: center;
+
+  }
+#proposta p {
+    width: 100%;
+    text-align: center;
+}
+
+
+}
+ @media only screen and (min-width: 1200px) {
+}
