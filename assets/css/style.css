@@ -455,20 +455,27 @@ text-align: center;
 
   padding: 10px 30px;
     border-radius: 3px;
-    background: #717171;
-    color: #e8e8e8;
-    text-transform: uppercase;
-    font-family: Bicyclette Bold;
-    font-size: 14px;
+        background: #4b2a4b;
     cursor: pointer;
             -webkit-transition: background-color .15s ease-out;
     transition: background-color .15s ease-out;
 }
 
+
+.planos ul li button a, .plano-popular ul li button a {
+
+        font-family: Bicyclette Bold;
+    color: #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
 .planos ul li button:hover,
 .plano-popular ul li button:hover {
+        background: #dea935;
 
-    background: #4b2a4b;
+
 
 }
 
@@ -792,6 +799,16 @@ color: #cacaca;
      text-align: center;
      cursor: pointer;
      border-radius: 3px;
+}
+
+#proposta #link-proposta button a
+{
+
+    font-family: Bicyclette Bold;
+    color: #572f56;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 /*========================================= Contato =========================================*/
  #contato {
