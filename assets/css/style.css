@@ -880,20 +880,19 @@ color: #cacaca;
      position: relative;
 }
  #copy {
-     padding: 30px;
-     background: #4b2a4b;
-     height: 20px;
+    background: #4b2a4b;
+    height: auto;
+    padding: 35px 0;
 }
  #copy p {
      color: #dddddd;
      font-family: Bicyclette Bold;
 }
+
  .social {
-}
- .social ul {
      text-align: right;
 }
- .social ul li {
+ .social li {
      display: inline-block;
      font-size: 21px;
      padding: 0px 12px;
@@ -901,9 +900,9 @@ color: #cacaca;
      right: 0;
      position: relative;
 }
- .social ul li a {
+ .social  li a {
 }
- .social ul li a span {
+ .social  li a span {
      color: #dddddd;
 }
  @media only screen and (max-width: 320px) {
@@ -1009,7 +1008,7 @@ header .menu {
     text-align: center;
 }
 
-.social ul {
+.social {
 
         text-align: center;
     position: relative;
