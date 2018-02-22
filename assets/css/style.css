@@ -1050,9 +1050,9 @@ header .menu {
   /* Portifolio */
 
     #portifolio .box {
-    width: 270px;
+    width: 90%;
     height: 170px;
-
+    margin: 5%;
 }
 
 /* Sobre */
