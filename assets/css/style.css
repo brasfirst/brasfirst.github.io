@@ -1089,5 +1089,71 @@ header .menu {
 
 
 }
- @media only screen and (min-width: 1200px) {
+@media only screen and (max-width: 300px) {
+
+header {
+    width: 100%;
+    top: 0;
+    position: fixed;
+    height: 50px;
+    z-index: 999;
+    background: #ffffff;
+    box-shadow: 0 0 5px rgba(89,89,89,.55);
+}
+
+header .logo {
+    width: auto;
+    height: auto;
+    padding: 10px;
+    position: relative;
+    float: none;
+    text-transform: uppercase;
+}
+
+main {
+    margin-top: 50px;
+}
+
+
+#slider1 h3 {
+    font-size: 25px;
+}
+
+#slider1 h4 {
+    font-size: 17px;
+
+}
+
+#slider2 h3 {
+    font-size: 25px;
+}
+
+#slider2 p {
+    font-size: 17px;
+}
+
+#slider3 .text {
+    top: 170px;
+
+}
+
+
+#o-que-fazemos ul li {
+    padding: 20px 0;
+}
+
+.title span {
+    width: 80%;
+    height: 1px;
+    position: relative;
+    display: flex;
+    margin: 15px auto;
+}
+
+#submit input {
+    cursor: pointer;
+    width: 80%;
+    border-radius: 3px;
+}
+
 }
