@@ -1132,7 +1132,7 @@ main {
     font-size: 17px;
 }
 
-#slider3 .text {
+#slider3 .text, #slider1 .text, #slider2 .text {
     top: 130px;
 
 }
