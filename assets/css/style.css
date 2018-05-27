@@ -1089,7 +1089,7 @@ header .menu {
 
 
 }
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 350px) {
 
 header {
     width: 100%;
@@ -1133,7 +1133,7 @@ main {
 }
 
 #slider3 .text {
-    top: 170px;
+    top: 130px;
 
 }
 
