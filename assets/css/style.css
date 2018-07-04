@@ -968,7 +968,7 @@ width: 100%!important;
 
 
 #topics .box {
-    width: 90%;
+    width: 90%important;
 }
 
 
@@ -1050,9 +1050,9 @@ header .menu {
   /* Portifolio */
 
     #portifolio .box {
-    width: 90%;
+    width: 270px;
     height: 170px;
-    margin: 5%;
+
 }
 
 /* Sobre */
@@ -1089,76 +1089,5 @@ header .menu {
 
 
 }
-@media only screen and (max-width: 350px) {
-
-header {
-    width: 100%;
-    top: 0;
-    position: fixed;
-    height: 50px;
-    z-index: 999;
-    background: #ffffff;
-    box-shadow: 0 0 5px rgba(89,89,89,.55);
-}
-
-header .logo {
-    width: auto;
-    height: auto;
-    padding: 8px;
-    position: relative;
-    float: none;
-    text-transform: uppercase;
-}
-
- header .logo h1 a {
-    text-decoration: none;
-    font-size: 20px;
-}
-
-main {
-    margin-top: 50px;
-}
-
-
-#slider1 h3 {
-    font-size: 25px;
-}
-
-#slider1 h4 {
-    font-size: 17px;
-
-}
-
-#slider2 h3 {
-    font-size: 25px;
-}
-
-#slider2 p {
-    font-size: 17px;
-}
-
-#slider3 .text, #slider1 .text, #slider2 .text {
-    top: 130px;
-
-}
-
-
-#o-que-fazemos ul li {
-    padding: 20px 0;
-}
-
-.title span {
-    width: 80%;
-    height: 1px;
-    position: relative;
-    display: flex;
-    margin: 15px auto;
-}
-
-#submit input {
-    cursor: pointer;
-    width: 80%;
-    border-radius: 3px;
-}
-
+ @media only screen and (min-width: 1200px) {
 }
