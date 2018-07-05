@@ -178,9 +178,10 @@ text-decoration: none;
      height: 100%;
 }
  #slider1 .text {
-     top: 250px;
-     position: relative;
-     z-index: 99;
+    top: 160px;
+    position: relative;
+    z-index: 99;
+
 }
  #slider1 h3 {
      font-size: 38px;
@@ -1045,7 +1046,7 @@ header .menu {
 
 
 #slider2 .text {
-    top: 180px;
+    top: 140px;
 
 }
 
