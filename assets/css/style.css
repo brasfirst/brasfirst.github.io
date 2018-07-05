@@ -968,7 +968,7 @@ width: 100%!important;
 
 
 #topics .box {
-    width: 90%important;
+    width: 90%;
 }
 
 
@@ -1005,6 +1005,8 @@ header .menu {
     height: 100%;
     width: 90%;
     padding: 55px 0;
+    left: 5%;
+    right: 5%;
 }
 
 .widget ul li {
