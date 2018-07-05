@@ -46,9 +46,7 @@
      display: flex;
      margin: 15px auto;
 }
- main {
-     margin-top: 80px;
-}
+
  section {
      position: relative;
      padding: 40px 0;
@@ -58,13 +56,13 @@
 }
 /*========================================= Cabeçalho =========================================*/
  header {
-     width: 100%;
-     top: 0;
-     position: fixed;
-     height: 80px;
-     z-index: 999;
-     background: #ffffff;
-     box-shadow: 0 0 5px rgba(89,89,89,.55);
+    width: 100%;
+    top: 0;
+    position: relative;
+    height: 80px;
+    z-index: 999;
+    background: #ffffff;
+    box-shadow: 0 0 5px rgba(89,89,89,.55);
 }
 /* Topbar --------------------------- */
  .topbar {
@@ -187,7 +185,7 @@ text-decoration: none;
  #slider1 h3 {
      font-size: 38px;
      text-transform: uppercase;
-     width: 400px;
+     width: auto;
      color: #ffffff;
 }
  #slider1 h4 {
@@ -293,7 +291,7 @@ text-decoration: none;
      top: 250px;
      position: relative;
      float: right;
-     right: 10%;
+     right: 0%;
      z-index: 99;
 }
  #slider3 h3 {
@@ -925,29 +923,40 @@ color: #cacaca;
  @media only screen and (max-width: 320px) {
 
       #portifolio .box {
-    width: 270px;
+       width: 90%;
     height: 170px;
+    margin: 15px 0;
+}
   }
 }
  @media only screen and (max-width: 480px) {
 
 
-#slider1 h3 {
-width: 90%;
-}
-
 
 
 #slider2 .text {
 
-    top: 150px;
+    top: 150px!important;
 }
-
-
-
 #slider3 .text {
-right: 0;
+    top: 185px!important;
+    position: relative!important;
+    float: right;
+    z-index: 99!important;
+    right: auto!important;
 }
+
+
+#slider1 h3 {
+    font-size: 38px;
+    text-transform: uppercase;
+    width: 90%!important;
+    color: #ffffff;
+}
+#slider2 .text {
+    top: 90px!important;
+}
+
 }
  @media only screen and (max-width: 768px) {
 
